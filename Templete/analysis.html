@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Results</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6; /* Light grey */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            max-width: 600px;
+            width: 80%;
+        }
+        h1 {
+            color: #ff6f61; /* Coral */
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+        .result {
+            margin-bottom: 20px;
+        }
+        .result span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis Results</h1>
+        <div class="result">
+            <span>Positive:</span> {{ sentiment_results.positive }}
+        </div>
+        <div class="result">
+            <span>Negative:</span> {{ sentiment_results.negative }}
+        </div>
+        <div class="result">
+            <span>Neutral:</span> {{ sentiment_results.neutral }}
+        </div>
+    </div>
+</body>
+</html>
